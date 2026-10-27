@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#f7eee5" />
+<title>لسه في حكاية ❤️</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap');
+:root{--cream:#f7eee5;--paper:#fffaf3;--rose:#b76e79;--rose2:#d99ca4;--wine:#653b46;--ink:#47343a;--muted:#8a7378;--gold:#c8a875;--shadow:0 22px 70px #68434b20}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Cairo',sans-serif;overflow-x:hidden}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #b76e7980;outline-offset:4px}.ambient{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.orb{position:absolute;border-radius:50%;filter:blur(1px);opacity:.28;background:radial-gradient(circle,#e8b8bd,transparent 70%);animation:float 12s ease-in-out infinite}.orb.one{width:320px;height:320px;top:-100px;right:-80px}.orb.two{width:260px;height:260px;bottom:-70px;left:-60px;animation-delay:-4s}.grain{position:absolute;inset:0;opacity:.08;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E")}
+main{position:relative;z-index:1}.screen{min-height:100svh;display:none;align-items:center;justify-content:center;padding:28px 18px}.screen.active{display:flex;animation:fadeIn .8s ease both}.wrap{width:min(100%,900px);margin:auto}.eyebrow{font-size:.78rem;letter-spacing:.13em;color:var(--rose);text-transform:uppercase}.center{text-align:center}.hero-title{font-family:'Amiri',serif;font-size:clamp(2.5rem,8vw,5.7rem);font-weight:700;line-height:1.15;margin:12px 0;color:var(--wine)}.subtitle{max-width:540px;margin:0 auto;color:var(--muted);line-height:2;font-size:1.03rem}.btn{border:0;border-radius:999px;padding:13px 25px;background:var(--wine);color:white;box-shadow:0 9px 25px #653b4625;transition:transform .25s,box-shadow .25s,background .25s}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px #653b4630;background:#7a4b57}.btn.secondary{background:transparent;color:var(--wine);border:1px solid #b76e7960;box-shadow:none}.btn.secondary:hover{background:#fff8f5}.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:30px}.tiny{font-size:.82rem;color:#9b8589;margin-top:18px}
+/* envelope */
+.envelope-area{margin:36px auto 25px;width:min(360px,84vw);height:235px;position:relative;perspective:1000px;filter:drop-shadow(0 24px 28px #6d454b20)}.envelope{position:absolute;inset:25px 0 0;background:#d8a9a6;border-radius:8px;overflow:hidden}.envelope:before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#e8c4b9,#c98f95)}.env-front{position:absolute;inset:0;background:linear-gradient(145deg,#e7bdb6,#c88d94);clip-path:polygon(0 0,50% 58%,100% 0,100% 100%,0 100%);z-index:3}.env-side{position:absolute;inset:0;z-index:2;background:linear-gradient(135deg,#dba8a6,#c58a91);clip-path:polygon(0 0,50% 58%,0 100%)}.env-side.right{clip-path:polygon(100% 0,50% 58%,100% 100%)}.flap{position:absolute;inset:0 0 auto;height:145px;background:linear-gradient(145deg,#f0d0c4,#d5a0a0);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;transition:transform 1s cubic-bezier(.2,.8,.2,1);z-index:5}.seal{position:absolute;z-index:6;top:94px;left:50%;transform:translateX(-50%);width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#d99ba2,#a85f70);color:#fff4ed;font-size:1.55rem;box-shadow:0 5px 14px #78465345;border:2px solid #f0c9bd}.letter-peek{position:absolute;left:8%;right:8%;top:18px;height:190px;background:var(--paper);border-radius:5px;z-index:1;transition:transform 1s cubic-bezier(.2,.8,.2,1)}.opened .flap{transform:rotateX(180deg);z-index:0}.opened .seal{opacity:0;transition:opacity .2s}.opened .letter-peek{transform:translateY(-105px);z-index:4}.opened .env-front{z-index:2}.opened .env-side{z-index:1}
+/* letter */
+.letter-card{background:var(--paper);border:1px solid #eadbd0;border-radius:22px;padding:clamp(24px,5vw,52px);box-shadow:var(--shadow);position:relative;overflow:hidden}.letter-card:before{content:'♡';position:absolute;left:20px;top:8px;font-size:5rem;color:#e9c8c5;opacity:.3;font-family:serif}.letter-card h2{font-family:'Amiri',serif;color:var(--wine);font-size:clamp(1.8rem,5vw,3rem);margin:0 0 20px}.letter-body{font-size:clamp(1rem,2.5vw,1.13rem);line-height:2.25;white-space:pre-line;min-height:210px}.letter-body .cursor{display:inline-block;width:2px;height:1.15em;background:var(--rose);vertical-align:middle;animation:blink .7s steps(2) infinite;margin-right:2px}.signature{font-family:'Amiri',serif;font-size:1.35rem;color:var(--rose);margin-top:22px;text-align:left;opacity:0;transition:opacity .7s}.signature.show{opacity:1}.progress{height:3px;background:#eadbd0;border-radius:9px;margin:20px 0 0;overflow:hidden}.progress span{display:block;width:0;height:100%;background:var(--rose);transition:width .3s}
+/* memories */
+.section-title{font-family:'Amiri',serif;color:var(--wine);font-size:clamp(2rem,5vw,3.5rem);margin:8px 0 10px}.memory-intro{color:var(--muted);line-height:1.9;max-width:590px;margin:0 auto}.memory-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:34px auto 0;max-width:760px}.memory{border:1px solid #e8d5cd;background:#fff9f3;border-radius:20px;padding:23px 14px;min-height:150px;color:var(--wine);transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}.memory:hover{transform:translateY(-5px);box-shadow:0 15px 35px #68434b16}.memory .heart{font-size:1.8rem;color:var(--rose);display:block;margin-bottom:9px;transition:transform .3s}.memory:hover .heart{transform:scale(1.18)}.memory strong{display:block;font-size:.95rem}.memory small{display:block;color:#a18b8e;margin-top:6px;font-size:.75rem}.memory-note{display:none;margin:24px auto 0;max-width:620px;padding:22px;border-radius:18px;background:#f0dfd7;color:#68434b;line-height:2;animation:fadeIn .5s}.memory-note.show{display:block}.memory-note button{border:0;background:transparent;color:var(--wine);text-decoration:underline;margin-top:10px}
+/* final */
+.final-card{max-width:680px;text-align:center}.flower{font-size:4rem;display:inline-block;animation:sway 4s ease-in-out infinite}.final-card h2{font-family:'Amiri',serif;color:var(--wine);font-size:clamp(2rem,6vw,4rem);line-height:1.25;margin:15px 0}.final-card p{line-height:2.1;color:var(--muted);font-size:1.05rem}.choice-panel{margin:24px auto 0;max-width:540px;display:grid;gap:10px}.choice{border:1px solid #e4cfc7;background:#fff9f4;color:var(--wine);border-radius:16px;padding:15px 18px;text-align:right;transition:all .25s}.choice:hover{transform:translateY(-2px);border-color:var(--rose);background:#fff}.choice span{display:block;font-size:.8rem;color:#9a8085;margin-top:3px}.response{display:none;margin:18px auto 0;background:#f0dfd7;border-radius:18px;padding:22px;line-height:2;color:#68434b;animation:fadeIn .5s}.response.show{display:block}.footer{padding:30px 10px 0;color:#aa9294;font-size:.75rem;text-align:center}
+.floating-heart{position:fixed;bottom:-30px;z-index:0;pointer-events:none;color:#d69ca5;animation:rise linear forwards;opacity:0}.music-toggle{position:fixed;left:15px;top:15px;z-index:10;border:1px solid #dfc7c0;background:#fff9f3eF;color:var(--wine);border-radius:999px;min-height:44px;padding:0 15px;display:flex;align-items:center;justify-content:center;gap:8px;backdrop-filter:blur(10px);box-shadow:0 8px 24px #68434b12;font-size:.84rem;font-weight:700}.music-toggle .music-icon{font-size:1.15rem}.music-toggle .music-label{white-space:nowrap}.youtube-audio{position:fixed;width:1px;height:1px;left:-10px;bottom:-10px;opacity:0;pointer-events:none}.topline{position:absolute;top:22px;right:22px;left:22px;display:flex;justify-content:space-between;align-items:center;color:#a38b8d;font-size:.75rem}.topline .brand{font-family:'Amiri',serif;color:var(--rose);font-size:1.05rem}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}@keyframes float{0%,100%{transform:translate(0,0)}50%{transform:translate(18px,25px)}}@keyframes blink{50%{opacity:0}}@keyframes sway{0%,100%{transform:rotate(-4deg)}50%{transform:rotate(5deg)}}@keyframes rise{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.65}90%{opacity:.3}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:600px){.screen{padding:26px 16px}.envelope-area{height:210px;margin-top:26px}.memory-grid{grid-template-columns:repeat(2,1fr);gap:10px}.memory{min-height:132px;padding:18px 10px}.letter-card{border-radius:18px}.letter-body{line-height:2.05}.topline{top:12px;right:15px;left:15px}.music-toggle{top:12px;left:12px;min-height:42px;padding:0 12px}.music-toggle .music-label{font-size:.76rem}.actions .btn{width:100%;max-width:320px}}
+@media(max-width:380px){.hero-title{font-size:2.35rem}.subtitle{font-size:.94rem}.envelope-area{width:88vw;height:190px}.letter-card{padding:22px 18px}.letter-body{font-size:.98rem}.memory-grid{gap:8px}.memory{padding:16px 8px}.choice{padding:13px 14px}.music-toggle{max-width:calc(100vw - 24px)}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="ambient"><div class="orb one"></div><div class="orb two"></div><div class="grain"></div></div>
+<button class="music-toggle" id="musicToggle" aria-label="تشغيل الأغنية" title="شغّلي الأغنية"><span class="music-icon" aria-hidden="true">♫</span><span class="music-label">شغّلي الأغنية</span></button><audio id="localAudio" preload="none" src="اغنية/Tamer Hosny - Bahbek.mp4"></audio>
+<main>
+<section class="screen active" id="intro">
+ <div class="wrap center">
+  <div class="eyebrow">A little letter, from my heart</div>
+  <h1 class="hero-title">لسه في حكاية</h1>
+  <p class="subtitle">في كلام كتير كان نفسي أقولهولك…<br>فكتبتلك جواب صغير، خديه براحتك.</p>
+  <div class="envelope-area" id="envelopeArea" aria-label="ظرف جواب حب">
+   <div class="letter-peek"></div><div class="envelope"><div class="env-side"></div><div class="env-side right"></div><div class="env-front"></div></div><div class="flap"></div><div class="seal">♥</div>
+  </div>
+  <button class="btn" id="openLetter">افتحي جوابك <span aria-hidden="true">♡</span></button>
+  <p class="tiny">مفيش استعجال… اقريه على مهلك 🤍</p>
+ </div>
+</section>
+<section class="screen" id="letter">
+ <div class="wrap">
+  <div class="topline"><span class="brand">لسه في حكاية ♡</span><span>رسالة من القلب</span></div>
+  <article class="letter-card">
+   <div class="eyebrow">To someone very special</div>
+   <h2>عارفة…</h2>
+   <div class="letter-body" id="letterBody" aria-live="polite"></div>
+   <div class="signature" id="signature">من حد لسه بيحبك 🤍</div>
+   <div class="progress"><span id="progressBar"></span></div>
+  </article>
+  <div class="actions"><button class="btn" id="toMemories" disabled>نكمل الحكاية <span>♡</span></button></div>
+ </div>
+</section>
+<section class="screen" id="memories">
+ <div class="wrap center">
+  <div class="eyebrow">Six years, a thousand little moments</div><h2 class="section-title">٦ سنين… مش مجرد وقت</h2>
+  <p class="memory-intro">يمكن مش هقدر أحط كل الذكريات هنا، بس كل واحدة فيهم ليها مكانها. اضغطي على قلب، وخدي لحظة صغيرة من الكلام.</p>
+  <div class="memory-grid">
+   <button class="memory" data-memory="first"><span class="heart">♡</span><strong>أول الحكاية</strong><small>البداية اللي مش بننساها</small></button>
+   <button class="memory" data-memory="laugh"><span class="heart">♡</span><strong>ضحكتنا</strong><small>حاجات بسيطة بس غالية</small></button>
+   <button class="memory" data-memory="days"><span class="heart">♡</span><strong>أيامنا</strong><small>كل يوم كان ليه معنى</small></button>
+   <button class="memory" data-memory="miss"><span class="heart">♡</span><strong>الوحشة</strong><small>حتى في البُعد</small></button>
+   <button class="memory" data-memory="learn"><span class="heart">♡</span><strong>اللي اتعلمناه</strong><small>كبرنا وفهمنا أكتر</small></button>
+   <button class="memory" data-memory="still"><span class="heart">♡</span><strong>لسه فاكر</strong><small>في حاجات مبتروحش</small></button>
+  </div>
+  <div class="memory-note" id="memoryNote" aria-live="polite"><div id="memoryText"></div><button id="closeMemory">اقفلي الذكرى</button></div>
+  <div class="actions"><button class="btn" id="toFinal">في كلام كمان… <span>♡</span></button></div>
+ </div>
+</section>
+<section class="screen" id="final">
+ <div class="wrap final-card">
+  <div class="flower">🌷</div><div class="eyebrow">No pressure, just honesty</div>
+  <h2>يمكن لسه في حكاية<br>تستاهل تتكتب…</h2>
+  <p>أنا عارف إن الرجوع مش مجرد إننا نحب بعض.<br>في حاجات حصلت، ومخاوف، وأسئلة لازم نكون صريحين فيها.<br><br>مش عايز أضغط عليكي، ولا عايزنا ناخد خطوة لمجرد إننا وحشنا بعض.<br>بس لو في يوم حسينا إننا نقدر نبدأ من جديد بشكل أحسن،<br>نفسي ندي الحكاية فرصة… خطوة خطوة، وبراحتنا إحنا الاتنين.</p>
+  <div class="choice-panel">
+   <button class="choice" data-response="chance">يمكن نديها فرصة ❤️<span>لو إحنا الاتنين مستعدين نحاول من جديد</span></button>
+   <button class="choice" data-response="talk">خلينا نتكلم أكتر 🫂<span>نفهم بعض ونسمع بعض من غير استعجال</span></button>
+   <button class="choice" data-response="time">محتاجين وقت شوية 🤍<span>وده حقنا… ومفيش أي ضغط</span></button>
+  </div>
+  <div class="response" id="response" aria-live="polite"></div>
+  <div class="actions"><button class="btn secondary" id="restart">ارجعي لأول الجواب</button></div>
+  <div class="footer">اتكتبت بحب… واتسابِتلك حرية الاختيار 🤍</div>
+ </div>
+</section>
+</main>
+<script>
+const screens=[...document.querySelectorAll('.screen')];
+function showScreen(id){screens.forEach(s=>s.classList.toggle('active',s.id===id));window.scrollTo({top:0,behavior:'smooth'});}
+const envelope=document.getElementById('envelopeArea');
+document.getElementById('openLetter').addEventListener('click',()=>{envelope.classList.add('opened');setTimeout(()=>showScreen('letter'),650);setTimeout(typeLetter,850);});
+const letterText=`مش عارف أبدأ الكلام منين، ولا أقولك إيه بالظبط.\n\nبس عارف إن ٦ سنين مش مجرد وقت عدى… دي حكاية عشنا فيها حاجات كتير، ضحكنا، زعلنا، واتغيرنا.\n\nويمكن أكتر حاجة غريبة إننا رغم كل اللي حصل، لسه بنتكلم، ولسه في حاجات كتير جوانا متقالتش.\n\nأنا مش بفتح الكلام ده عشان أرجعك لوجع قديم، ولا عشان أطلب منك قرار. أنا بس عايزك تعرفي إنك لسه شخص غالي عندي، وإن الحكاية دي بالنسبالي عمرها ما كانت حاجة عادية.\n\nيمكن مش كل حاجة كانت سهلة، ويمكن في حاجات كان لازم نفهمها من بدري… بس اللي بينا يستاهل إننا نفتكر الحلو، ونكون صريحين مع نفسنا في اللي وجعنا كمان.\n\nخدي وقتك وإنتِ بتقري. مفيش إجابة مطلوبة، ولا خطوة لازم تحصل دلوقتي. كنت بس محتاج أقولك الكلام ده من قلبي.\n\nولو في يوم قررنا نقرب تاني، أتمنى يكون عشان إحنا الاتنين عايزين، وعارفين إننا هنحاول نكون أحسن لبعض. 🤍`;
+let typing=false;
+function typeLetter(){if(typing)return;typing=true;const target=document.getElementById('letterBody');target.innerHTML='';const cursor=document.createElement('span');cursor.className='cursor';target.appendChild(cursor);let i=0;const bar=document.getElementById('progressBar');function tick(){if(i<letterText.length){cursor.insertAdjacentText('beforebegin',letterText[i]);i++;bar.style.width=(i/letterText.length*100)+'%';setTimeout(tick,letterText[i-1]==='\n'?230:27);}else{cursor.remove();document.getElementById('signature').classList.add('show');document.getElementById('toMemories').disabled=false;}}tick();}
+document.getElementById('toMemories').addEventListener('click',()=>showScreen('memories'));
+const memoryCopy={first:'يمكن مش فاكر كل تفاصيل أول الحكاية بنفس الترتيب… بس فاكر إحساس إن في حد دخل حياتي وبقى له مكان مختلف. البداية دي جزء مننا، مهما الأيام اتغيرت.',laugh:'في ضحكات ومواقف صغيرة يمكن محدش غيرنا يفهمها. حاجات عادية جدًا، بس لما بفتكرها بتفكرني قد إيه كان بينا تفاصيل حلوة.',days:'ست سنين فيها أيام كتير، وكل يوم كان بيضيف حاجة للحكاية. مش كل الأيام كانت مثالية، بس كان فيها لحظات حقيقية تستاهل تتفتكر.',miss:'البُعد بيخلّي الواحد يفهم قيمة وجود شخص في حياته. بس الوحشة لوحدها مش سبب كفاية للرجوع… المهم نكون مرتاحين ومقتنعين وإحنا بناخد أي خطوة.',learn:'يمكن اتعلمنا إن الحب محتاج كلام واضح، واهتمام، وصبر، وإننا نسمع بعض بجد. وإن أي بداية جديدة لازم تبقى أهدى وأصدق من اللي فات.',still:'لسه فاكر حاجات كتير، مش عشان أعيش في الماضي، لكن عشان أقدّر إن الحكاية كان فيها معنى. واللي جاي، لو جه، أتمنى نختاره بإرادتنا.'};
+document.querySelectorAll('.memory').forEach(btn=>btn.addEventListener('click',()=>{document.getElementById('memoryText').textContent=memoryCopy[btn.dataset.memory];document.getElementById('memoryNote').classList.add('show');}));
+document.getElementById('closeMemory').addEventListener('click',()=>document.getElementById('memoryNote').classList.remove('show'));
+document.getElementById('toFinal').addEventListener('click',()=>showScreen('final'));
+const responses={chance:'أنا مبسوط إنك حاسة إن ممكن نديها فرصة. خلينا ناخدها واحدة واحدة، نتكلم بصراحة، ونبني حاجة أهدى وأحسن من غير وعود كبيرة أو استعجال. ❤️',talk:'وده يمكن أحسن بداية… نتكلم، نسمع بعض، ونفهم إيه اللي محتاج يتغير. مش لازم نقرر كل حاجة النهارده. 🫂',time:'خدي وقتك براحتك، بجد. مش مطلوب منك تردي دلوقتي، ولا تختاري حاجة عشان ترضيني. المهم تكوني مرتاحة، وأنا هحترم ده. 🤍'};
+document.querySelectorAll('.choice').forEach(btn=>btn.addEventListener('click',()=>{const box=document.getElementById('response');box.textContent=responses[btn.dataset.response];box.classList.add('show');box.scrollIntoView({behavior:'smooth',block:'center'});}));
+document.getElementById('restart').addEventListener('click',()=>{typing=false;document.getElementById('letterBody').textContent='';document.getElementById('signature').classList.remove('show');document.getElementById('toMemories').disabled=true;document.getElementById('progressBar').style.width='0';envelope.classList.remove('opened');document.getElementById('memoryNote').classList.remove('show');document.getElementById('response').classList.remove('show');showScreen('intro');});
+// Playback begins only after the visitor taps the visible music button.
+const toggle=document.getElementById('musicToggle');
+const localAudio=document.getElementById('localAudio');
+let musicOn=false;
+function setMusicButton(isPlaying,label=''){
+ musicOn=isPlaying;
+ toggle.querySelector('.music-icon').textContent=isPlaying?'♫':'♪';
+ toggle.querySelector('.music-label').textContent=label||(isPlaying?'الأغنية شغالة · إيقاف':'شغّلي الأغنية');
+ toggle.setAttribute('aria-label',isPlaying?'إيقاف الأغنية':'تشغيل الأغنية');
+ toggle.title=isPlaying?'إيقاف الأغنية':'شغّلي الأغنية';
+}
+toggle.addEventListener('click',async()=>{
+ if(musicOn){
+  localAudio.pause();
+  localAudio.currentTime=0;
+  setMusicButton(false);
+ }else{
+  try{
+   await localAudio.play();
+   setMusicButton(true);
+  }catch(error){
+   console.error('تعذر تشغيل ملف الأغنية:',error);
+   setMusicButton(false,'تعذر تشغيل الأغنية · أعيدي المحاولة');
+   toggle.title='تحققي من توفر ملف الأغنية ثم أعيدي المحاولة';
+  }
+ }
+});
+localAudio.addEventListener('ended',()=>setMusicButton(false));
+localAudio.addEventListener('error',()=>{
+ if(!musicOn){
+  setMusicButton(false,'تعذر تحميل الأغنية · أعيدي المحاولة');
+  toggle.title='تحققي من توفر ملف الأغنية ثم أعيدي المحاولة';
+ }
+});
+// A few subtle floating hearts, with reduced-motion respected.
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){setInterval(()=>{const h=document.createElement('span');h.className='floating-heart';h.textContent=Math.random()>.5?'♡':'♥';h.style.left=Math.random()*100+'vw';h.style.fontSize=(12+Math.random()*17)+'px';h.style.animationDuration=(9+Math.random()*8)+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),18000)},1800)}
+</script>
+</body>
+</html>
